@@ -9,17 +9,17 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class TutorProduct extends Model
 {
     use HasFactory,SoftDeletes;
+
     protected $fillable = [
         'title',
         'description',
         'deleted_at',
         'created_at',
-        'updated_at'
+        'updated_at',
     ];
 
     public function teams()
     {
         return $this->hasMany(Team::class);
     }
-
 }

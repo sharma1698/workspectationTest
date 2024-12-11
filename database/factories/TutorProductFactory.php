@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Factories;
+
 use App\Models\TutorProduct;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -15,6 +16,7 @@ class TutorProductFactory extends Factory
      * @return array<string, mixed>
      */
     protected $model = TutorProduct::class;
+
     public function definition(): array
     {
         return [

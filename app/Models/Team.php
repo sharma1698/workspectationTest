@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Team extends Model
 {
     use HasFactory, SoftDeletes;
+
     protected $fillable = [
         'tutor_product_id',
         'name',
@@ -16,7 +17,7 @@ class Team extends Model
         'website',
         'deleted_at',
         'created_at',
-        'updated_at'
+        'updated_at',
     ];
 
     public function tutorProduct()
